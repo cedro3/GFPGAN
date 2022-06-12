@@ -38,6 +38,7 @@ def display_pic(folder):
 # --- display ---
 import cv2
 import matplotlib.pyplot as plt
+
 def display(img1, img2):
   fig = plt.figure(figsize=(15, 15))
   ax1 = fig.add_subplot(1, 2, 1) 
