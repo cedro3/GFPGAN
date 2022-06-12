@@ -1,5 +1,5 @@
 # --- display_mp4 ---
-from IPython.display import display, HTML
+from IPython.display import display, HTML, clear_output
 
 def display_mp4(path):
     from base64 import b64encode
@@ -34,7 +34,22 @@ def display_pic(folder):
     plt.show()
     plt.close()
 
-
+    
+# --- display ---
+import cv2
+import matplotlib.pyplot as plt
+def display(img1, img2):
+  fig = plt.figure(figsize=(15, 15))
+  ax1 = fig.add_subplot(1, 2, 1) 
+  plt.title('Input image', fontsize=16)
+  ax1.axis('off')
+  ax2 = fig.add_subplot(1, 2, 2)
+  plt.title('GFPGAN output', fontsize=16)
+  ax2.axis('off')
+  ax1.imshow(img1)
+  ax2.imshow(img2)
+    
+    
 # --- reset_folder ---
 import shutil
 
