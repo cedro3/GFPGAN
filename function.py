@@ -35,7 +35,7 @@ def display_pic(folder):
     plt.close()
 
     
-# --- display ---
+# --- comp_display ---
 import cv2
 import matplotlib.pyplot as plt
 
