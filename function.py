@@ -39,7 +39,7 @@ def display_pic(folder):
 import cv2
 import matplotlib.pyplot as plt
 
-def display(img1, img2):
+def comp_display(img1, img2):
   fig = plt.figure(figsize=(15, 15))
   ax1 = fig.add_subplot(1, 2, 1) 
   plt.title('Input image', fontsize=16)
